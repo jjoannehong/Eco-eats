@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="expiryDateGenerator()">
+    <div class="navbar">
+      <a href="index.html"><img class="logo" src="assets/logo.png"></a>
+      <div class="pagecontainer">
+        <a class="pagelinks" href="info.html">Get Informed</a>
+        <a class="pagelinks" href="guide.html">Grocery Guide</a>
+        <a class="pagelinks" href="leftovers.html">Manage Leftovers</a>
+        <a class="pagelinks" href="about.html">About Us</a>
+      </div>
+    </div>
+    
+    <div class="homecontainer">
+      <div class="hometext">
+        <div class="homeheading">Reduce your<br>food waste.</div>
+        <div class="blurb">Eco-Eats is designed to educate users on the detrimental effects of food waste. Through our website, you can learn how to incorporate sustainable eating and shopping habits into your day-to-day life and combat the issue of food waste.</div>
+      </div>
+      <img class="homegraphic" src="assets/homegraphic.png">
+    </div> 
+
+    <div class="homecontainer2">
+      <div class="directorybox">
+        <div style="display:flex; align-items:center;flex-direction:column">
+          <div class="directorytext">Get Informed</div>
+          <div class="directorydescription">Learn about our cause and the negative environmental impacts of food waste and find additional resources to read more.</div>
+        </div>
+        <a href="info.html"><div class="redirect">
+          <div class="takemethere">Take me there</div>
+          <img class="arrow" src="assets/arrow.png">
+        </div></a>
+      </div>
+
+      <div class="directorybox">
+        <div style="display:flex; align-items:center;flex-direction:column">
+          <div class="directorytext">Grocery Guide</div>
+          <div class="directorydescription">Learn how to prevent food waste by using our interactive guide to learn about out the shelf lives of common products.</div>
+        </div>
+        <a href="guide.html"><div class="redirect">
+          <div class="takemethere">Take me there</div>
+          <img class="arrow" src="assets/arrow.png">
+        </div></a>
+      </div>
+
+      <div class="directorybox">
+        <div style="display:flex; align-items:center;flex-direction:column">
+          <div class="directorytext">Managing Leftovers</div>
+          <div class="directorydescription">Learn how to manage food waste by exploring methods to handle leftovers instead of throwing them away.</div>
+        </div>
+        <a href="leftovers.html"><div class="redirect">
+          <div class="takemethere">Take me there</div>
+          <img class="arrow" src="assets/arrow.png">
+        </div></a>
+      </div>
+    </div>
+        <div style="display:flex; justify-content:center;">
+    <div class="grocerybagcontainer" id="grocerycontainer">
+      <p id="grocerybagtitle"> What's in your grocery bag? </p>
+      <p class="grocerybagblurb">Have you ever wondered how long an item from the grocery store will last you? Use the form below when you purchase groceries to find out when they will expire on average!</p>
+        
+            <div class = "grocerybagrow">
+            <!-- row one -->
+            <label>
+              <input type="checkbox" id="apples" value="apples" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Apples</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="avocados" value="avocados" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Avocados</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="bananas" value="bananas" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Bananas</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="berries" value="berries" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Berries</div>
+              </input>
+            </label>
+          
+          <!-- row two -->
+            <label>
+              <input type="checkbox" id="bread" value="bread" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Bread</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="butter" value="butter" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Butter</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="carrots" value="carrots" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Carrots</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="chicken" value="chicken" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Chicken</div>
+              </input>
+            </label>
+
+          <!-- row three -->
+            <label>
+              <input type="checkbox" id="cucumbers" value="cucumbers" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Cucumbers</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="eggs" value="eggs" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Eggs</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="lettuce" value="lettuce" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Lettuce</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="milk" value="milk" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Milk</div>
+              </input>
+            </label>
+
+          <!-- row four -->
+            <label>
+              <input type="checkbox" id="potatoes" value="potatoes" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Potatoes</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="redmeat" value="redmeat" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Red Meat</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="seafood" value="seafood" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Seafood</div>
+              </input>
+            </label>
+
+            <label>
+              <input type="checkbox" id="tomatoes" value="tomatoes" class="squareBox" name="selector[]">
+                 <div class="grocerybagitem">Tomatoes</div>
+              </input>
+            </label>
+
+          </div>
+
+          <div class="dateList">
+          </div>
+
+      <div class="grocerybagrow">
+      <input type="button" id="generatelist" name="save_value" value="Generate Expiry Date List"/>
+      </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

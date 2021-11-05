@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><img class="logo" src="assets/logo.png"></a>
+      <div class="pagecontainer">
+        <a class="pagelinks" href="info.html">Get Informed</a>
+        <a class="pagelinks" href="guide.html">Grocery Guide</a>
+        <a class="pagelinks" href="leftovers.html">Manage Leftovers</a>
+        <a class="pagelinks" href="about.html">About Us</a>
+      </div>
+    </div>
+
+    <div class="groceryheading">Grocery Guide</div>
+    <div style="display:flex; justify-content: center"><div class="groceryblurb">Learning how to shop smart and store products properly is essential for preventing food waste. Before your next grocery shopping trip, use our interactive grocery guide to learn about the shelf lives of common products and how to preserve their freshness for longer! Click on each product to learn more about them.</div></div>
+
+    <div class="guidecontainer">
+      <button id="apple" class="guidebox"><img class="foodicons" src="assets/apple.png" alt="apple"></button>
+
+      <button id="avocado" class="guidebox"><img class="foodicons" src="assets/avocado.png" alt="avocado"></button>
+
+      <button id="banana" class="guidebox"><img class="foodicons" src="assets/banana.png" alt="banana"></button>
+
+      <button id="berries" class="guidebox"><img class="foodicons" src="assets/berries.png" alt="berries"></button>
+
+      <button id="bread" class="guidebox"><img class="foodicons" src="assets/bread.png" alt="bread"></button>
+
+      <button id="butter" class="guidebox"><img class="foodicons" src="assets/butter.png" alt="butter"></button>
+
+      <button id="carrot" class="guidebox"><img class="foodicons" src="assets/carrot.png" alt="carrot"></button>
+
+      <button id="chicken" class="guidebox"><img class="foodicons" src="assets/chicken.png" alt="chicken"></button>
+
+      <button id="cucumber" class="guidebox"><img class="foodicons" src="assets/cucumber.png" alt="cucumber"></button>
+
+      <button id="eggs" class="guidebox"><img class="foodicons" src="assets/eggs.png" alt="eggs"></button>
+
+      <button id="lettuce" class="guidebox"><img class="foodicons" src="assets/lettuce.png" alt="lettuce"></button>
+
+      <button id="milk" class="guidebox"><img class="foodicons" src="assets/milk.png" alt="milk"></button>
+
+      <button id="potato" class="guidebox"><img class="foodicons" src="assets/potato.png" alt="potato"></button>
+
+      <button id="redmeat" class="guidebox"><img class="foodicons" src="assets/redmeat.png" alt="red meat"></button>
+
+      <button id="seafood" class="guidebox"><img class="foodicons" src="assets/seafood.png" alt="seafood"></button>
+
+      <button id="tomato" class="guidebox"><img class="foodicons" src="assets/tomato.png" alt="tomato"></button>
+    </div>
+    
+    <div id="appleModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Apples</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>6-8 weeks in the fridge (uncut, individually wrapped)</li>
+            <li>1 week at room temperature</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Leave your apples in whole form until you are ready to eat them to decrease the rate of oxidation and deterioration </li>
+            <li>Submerge cut apple slices in a mixture of 1 teaspoon (5 ml) lemon juice per 1 cup (240 ml) water to slow browning</li>
+            <li>Store apples in the fridge drawers to retain freshness for longer.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="avocadoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Avocados</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>An unripe avocado lasts about 3 days to a week at room temperature until it ripens.</li> 
+            <li>Once it has matured, it can last another 3 to 5 days at peak quality in the fridge.</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Refrigerate avocados once they are in the firm stage to maintain the avocado and then take them out to ripen for use.</li>
+            <li>Once ripe, eat the avocado in the next day or two, and then store it whole and uncut in the refrigerator for up to three days.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="bananaModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Bananas</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>2 to 3 days in the pantry </li>
+            <li>about a week in the fridge</li>
+            <li>cut bananas: 3 to 4 days in the fridge</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Wrap the stems in plastic wrap and hang them, away from other produce. </li>
+            <li>If the bananas are peeled, add citrus to prevent browning.</li>
+            <li>Frozen bananas last much longer (and make a perfect healthy ice cream when blended!)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="berriesModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Berries</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>Strawberries, blueberries: 5-7 days in the fridge</li>
+            <li>Blackberries, raspberries, and gooseberries: 3-5 days in the fridge</li>
+            <li>The fruit will keep best when they are completely whole, with no exposed sliced areas.</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Leave berries unwashed until the moment before consumption to keep them mold-free longer.</li>
+            <li>Washing your berries in a solution of vinegar and water can extend their shelf-life by days (sometimes even weeks!). 
+</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="breadModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Bread</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>Bread kept at room temperature can last 3–7 days</li>
+            <li>When frozen, bread can last for up to 6 months.</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Bread is more likely to spoil if stored in warm, moist environments. </li>
+            <li>Freeze bread and thaw when ready to eat.</li>
+            <li>Frozen bread slices are easily thawed in a toaser.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="butterModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Butter</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>0.5 - 6 months, depending on temperature</li>
+            <li>Butter lasts longer the colder it is stored.</li>
+            <li>Stick butters may keep 8–12 months in the freezer.</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Seal butter tightly in its original packaging or aluminum foil.</li>
+            <li>Freeze butter slices and use when greasing pans</li>
+            <li>Salted butter lasts longer because of its low risk of bacteria growth.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="carrotModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Carrots</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>3-5 days at room temperature</li>
+            <li>3-4 weeks in the fridge</li>
+            <li>If sliced/chopped, they can last 2-3 weeks in the fridge</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Store them whole and un-peeled in a plastic bag in the fridge. Baby carrots are also best in a plastic bag in a refrigerator drawer.</li>
+            <li>Carrots may be frozen for 6-8 months, but they should be blanched first and then placed into freezer safe containers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="chickenModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Chicken</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>1-2 days in refrigerator (40 °F or below)</li>
+            <li>9-12 months in the freezer (0 °F or below)</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Raw chicken is best stored in a leak-proof container to prevent its juices from leaking and contaminating other foods</li>
+            <li>Freeze raw or cooked chicken and thaw for use.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="cucumberModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Cucumbers</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>Whole cucumbers can last about a week in the fridge.</li>
+            <li>Cut cucumbers only last a few days in the fridge.</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Store them whole and unpeeled in a plastic bag in the vegetable drawer in the fridge.</li>
+            <li>Do not wash them before putting them in the fridge, but rinse and scrub them well before eating.</li>
+            <li>Put cut cucumbers in a baggie and cover the cut end with a moist paper towel for the best storage.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="eggsModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Eggs</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>Fresh eggs can be kept for 3–5 weeks in the fridge or about one year in the freezer.</li>
+            <li>The longer they are stored, the quality drops</li>
+            <li>Refer to the expiration date for specific dates</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Store them in the carton they came from, this also allows us to keep an eye on the printed date</li>
+            <li>Store them in the interior of your fridge, away from the door.</li>
+            <li>Older eggs are good for boiling, omelets, and scrambled eggs; make sure to check if they have gone bad by cracking them open and sniffing them
+</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="lettuceModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Lettuce</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>Loose leaf lettuce can last 7-10 days in the fridge</li>
+            <li>Head lettuce can last 1-3 weeks in the fridge</li>
+            <li>Lettuce can be frozen for up to 6 months</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>A whole head of lettuce will typically last longer than individual greens, especially tightly bound heads of lettuce, such as iceberg and endive</li>
+            <li>To store a full head of lettuce, wrap in a damp paper towel and put the head inside a plastic bag, in the fridge</li>
+            <li>To store individual lettuce leaves, spin them dry after washing and place in a plastic bag in the fridge. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="milkModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Milk</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>Unopened: 5-7 days after the printed date</li>
+            <li>Opened: 2-3 days after the printed date</li>
+            <li>If milk is left unrefrigerated for more than two hours, it’s considered unsafe to consume.</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Refrigerate right after purchase</li>
+            <li>Always seal properly and return to fridge</li>
+            <li>Store milk on an interior shelf instead of a shelf on the fridge door</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="potatoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Potatoes</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>1–2 weeks at room temperature</li>
+            <li>2–3 months in the fridge</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Store potatoes in a cool and dry place.</li>
+            <li>Discard or compost spoiled potatoes immediately to prevent it from spoiling nearby potatoes.</li>
+            <li>Store cut potatoes in a sealed container of water and place in the fridge.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="redmeatModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Red Meat</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>3-5 days in refrigerator  (40 °F or below)</li>
+            <li>4-12 months in the freezer (0 °F or below)</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Freeze and thaw for use.</li>
+            <li>Salt meat to draw out moisture and prevent bacteria growth.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="seafoodModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Seafood</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>Up to 6 months in freezer</li>
+            <li>However, if you want to preserve its quality, flavor, and texture, freeze seafood only for up to 3 months. </li>
+            <li>The earlier you use them, the better.</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Frozen seafood should be kept frozen, and date packages of frozen seafood so you can use the older seafood first.</li>
+            <li>Curing preserves fish by either smoking or salting it.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="tomatoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="foodname">Tomatoes</div>
+        <div class="modalheading">Average Shelf Life</div>
+        <div class="modaltext">
+          <ul>
+            <li>2 weeks in the fridge </li>
+            <li>1 week at room temperature</li>
+          </ul>
+        </div>
+        <div class="modalheading">How to retain them for longer:</div>
+        <div class="modaltext">
+          <ul>
+            <li>Purchase slightly unripe tomatoes if not using immediately.</li>
+            <li>Store stem-side down.</li>
+            <li>Keep unripe tomatoes on the counter, and store in the fridge when ripe.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>

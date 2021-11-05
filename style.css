@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@500&display=swap');
+/**for all pages**/
+.page {
+  background-color: #F9F8ED;
+}
+
+body {
+  margin-top: 100px;
+  margin: 0px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #F9F8ED;
+  margin: 0px;
+  position: fixed;
+  top:0;
+  left:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 89px;
+  z-index: 1;
+}
+
+.pagecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 5px;
+  margin-right: 50px;
+}
+
+.pagelinks {
+  font-family: Poppins;
+  text-decoration: none;
+  color: #ECA952;
+  font-size: 20px;
+}
+
+.pagelinks:hover {
+  color: #EA9A38;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
+.logo {
+  object-fit: contain;
+  height: 50px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+}
+
+/**home page**/
+.homecontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.hometext {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+
+}
+
+.homeheading {
+  font-family: Poppins;
+  color: #ADC6A0;
+  font-weight: 600; 
+  letter-spacing: 1px;
+  font-size: 55px;
+  margin-bottom: 8px;
+}
+
+.blurb {
+  font-family: Poppins;
+  font-size: 17px;
+  color: #5B815C;
+}
+
+.homegraphic {
+  object-fit: contain;
+  height: 320px;
+  margin-left: 50px;
+}
+
+.homecontainer2 {
+  width:100%;
+  background-color: #F7D9A5;
+  margin-top: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  margin-bottom: 200px;
+}
+
+.directorybox {
+  width: 23%;
+  min-width: 250px;
+  border-radius: 30px;
+  height: 350px;
+  background-color: #F9F8ED;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 4px #F4C686;
+}
+
+.directorytext {
+  font-family: poppins;
+  font-size: 23px;
+  color:#81AB82;
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.directorydescription {
+  font-family: poppins;
+  font-size: 16.5px;
+  color: #5B815C;
+  width: 80%;
+  text-align: center;
+  line-height: 170%;
+}
+
+.takemethere {
+  font-family: poppins;
+  font-size: 22px;
+  color: #EA9A38;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.redirect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.redirect:hover .arrow {
+  width: 55%;
+}
+
+.redirect:hover .takemethere{
+  font-size: 25px;
+}
+
+.arrow {
+  object-fit: contain;
+  width: 45%;
+  transition: 0.4s;
+}
+
+a {
+  text-decoration:none;
+}
+
+
+/**grocery guide**/
+.groceryheading {
+  margin-top: 130px;
+  font-family: poppins;
+  font-size: 36px;
+  color: #EA9A38;
+  text-align: center;
+}
+
+.groceryblurb {
+  margin-top: 20px;
+  font-family: poppins;
+  font-size: 18px;
+  color: #B56912;
+  width: 80%;
+  text-align: center;
+}
+
+.guidecontainer {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #ADC6A0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  padding-top: 50px;
+}
+
+.guidebox {
+  border-radius: 50px;
+  width: 200px;
+  margin: 20px;
+  margin-bottom: 40px;
+  height: 200px;
+  background-color: #F9F8ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #81AB82 solid 4px;
+  box-shadow: 3px 3px 8px 4px rgba(91, 129, 92, 0.4);
+}
+
+.guidebox:hover, .guidebox:active {
+  box-shadow: 3px 3px 10px 6px rgba(90, 90, 90, 0.3) inset;
+}
+
+.foodicons {
+  object-fit: contain;
+  width: 120px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #F7D9A5;
+  border-radius: 30px;
+  padding: 20px;
+  padding-top: 0px;
+  margin: auto;
+  border: 4px solid #EEB76B;
+  width: 75%;
+  margin-top: 150px;
+  color: #B56912;
+  font-family: poppins;
+}
+
+.foodname {
+  color:#B56912;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.modalheading {
+  color:#D08225;
+  font-size: 20px;
+}
+
+.modaltext {
+  color:#B56912;
+  font-size: 16px;
+}
+
+.close {
+  color: #B56912;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #EA9A38;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/**about page**/
+
+.aboutUsheading{
+  margin-top:130px;
+  font-family:poppins; 
+  font-size:40px;
+  color:#81AB82;
+  text-align:center;
+}
+
+.imageBios {
+  display: flex;
+  justify-content: space-around;
+  margin:auto;
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+.profile{
+  object-fit: cover;
+  width: 18vw;
+  height: 18vw;
+  border: #EEB76B 8px solid;
+  border-radius:50%;
+}
+
+.endingMessageAbout{
+  font-family:poppins; 
+  font-size:30px;
+  color:#D08225;
+  text-align: center;
+  margin-top:75px;
+  margin-bottom: 100px;
+}
+
+.aboutcontainer{
+  margin-top:30px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items:flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom:100px;
+}
+
+.bioBox{
+  width:16vw;
+  min-width:230px;
+  min-height:350px;
+  background-color: #D9E1BE;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content: space-between;
+  border:solid 4px #ADC6A0;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.bioName{
+  font-family: poppins;
+  font-size:25px;
+  color:#3B674C;
+  margin:15px;
+  margin-top: 10px;
+}
+.bioWords{
+  font-family:poppins;
+  font-size:17px;
+  color: #5E8967;
+  text-align: center;
+}
+
+/* grocery bag expiry date list */
+.grocerybagcontainer {
+  background-color: #D9E1BE;
+  border-radius: 30px;
+  width: 60%;
+  margin-bottom: 8em;
+}
+
+#grocerybagtitle {
+  font-family: Poppins;
+  color: #81AB82;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 0px;
+}
+
+.grocerybagblurb {
+  font-family: Poppins;
+  color: #3B674C;
+  font-size: 16px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.grocerybagrow {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+
+.grocerybagitem {
+  border: 3px solid #EEB76B;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Poppins;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #F7D9A5;
+  color: #B56912;
+  cursor: pointer;
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.squareBox:checked ~ .grocerybagitem {
+  border: 3px solid #B56912;
+  background-color: #B56912;
+  color: #F7D9A5;
+}
+
+.grocerybagitem:hover {
+  border: 3px solid #B56912;
+  background-color: #B56912;
+  color: #F7D9A5;
+}
+
+:checked {
+  border: 3px solid #B56912;
+  background-color: #B56912;
+  color: #F7D9A5;
+}
+
+#generatelist {
+  justify-self: center;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Poppins;
+  padding: 13px 17px;
+  background-color: #81AB82;
+  color: #F9F8ED;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 50px;
+}
+
+#generatelist:hover {
+  font-size: 18px;
+}
+
+fieldset {
+  border: none;
+  max-width: 65%;
+}
+
+.squareBox {
+  opacity: 0;
+}
+
+input[type=checkbox] {
+  flex: inherit;
+  margin-right: 10px;
+}
+
+form {
+  max-width: 65%;
+}
+
+.expiryDateInfo{
+  font-family: Poppins;
+  color: #5E8967;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/**managing leftovers**/
+.leftoversheading {
+  font-family: poppins;
+  font-size: 40px;
+  text-align: center;
+  color: #EA9A38;
+  margin-top: 170px;
+  margin-bottom: 20px;
+}
+
+.leftoversblurb {
+  font-family: poppins;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 70%;
+  margin: auto;
+  color: #B56912;
+}
+
+.leftoverscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 500px;
+}
+
+.leftoversbutton {
+  background-color: #81AB82;
+  font-family: poppins;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  color:#F9F8ED;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 7px rgba(91, 129, 92, 0.5);
+}
+
+.leftoversbutton:hover {
+  color: #5B815C;
+  background-color: #ADC6A0;
+  box-shadow: 5px 5px 7px rgba(91, 129, 92, 0.3) inset;
+}
+
+
+#compost {
+  padding-top: 100px;
+}
+
+.compostcontainer {
+  background-color: #F7D9A5;
+  margin: auto;
+  width: 65%;
+  border-radius: 50px;
+  padding: 30px;
+  margin-bottom: 300px;
+}
+
+.compostheading {
+  font-family: poppins;
+  color: #D08225;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom : 10px;
+}
+
+.compostlinks {
+  color: #A46721;
+  font-size: 17px;
+}
+
+.compostlinks:hover {
+  color:#D08225;
+}
+
+.compostblurb {
+  font-family: poppins;
+  color: #A46721;
+  font-size: 17px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#recipes {
+  margin-top: 300px;
+  padding-top: 100px;
+}
+
+.goback {
+  font-family: poppins;
+  color: #EA9A38;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.goback:hover {
+  font-size: 22px;
+}
+
+.backarrow {
+  transform: rotate(180deg);
+  width: 55px;
+  margin-right: 10px;
+}
+
+.recipecontainer {
+  background-color: #D9E1BE;
+  font-family: poppins;
+  margin: auto;
+  width: 65%;
+  border-radius: 50px;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.recipeheading {
+  font-family: poppins;
+  color: #81AB82;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.recipeblurb {
+  font-family: poppins;
+  color: #3B674C;
+  font-size: 17px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.jam {
+  object-fit: contain;
+  width: 30%;
+  padding-right: 30px;
+}
+
+/**info page**/
+.page {
+  background-color: #F9F8ED;
+}
+
+.factheading {
+  font-family: poppins;
+  font-size: 25px;
+  color: #D08225;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#clickme {
+  font-family: poppins;
+  padding: 8px 40px;
+  color: #B56912;
+  font-size: 18px;
+  margin:10px;
+  background-color: #F9F8ED;
+  border-radius: 30px;
+  border: 3px solid #EEB76B;
+  text-align: center;
+  box-shadow:3px 3px 5px rgba(181, 105, 18, 0.5);
+}
+
+#factGen {
+  font-family: poppins;
+  font-size: 18px;
+  width: 80%;
+  color: #A46721;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+#clickme:active {
+  box-shadow:3px 3px 5px rgba(181, 105, 18, 0.5) inset;
+  cursor: pointer;
+}
+
+.factgenerator {
+  background-color: #F7D9A5;
+  border-radius: 50px;
+  margin: auto;
+  height: 209.3px;
+  width: 70%;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 6px 6px 0px 0px #EEB76B;
+}
+
+.infotitle {
+  font-family: poppins;
+  font-size: 25px;
+  color: #81AB82;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.infocontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 130px;
+}
+
+.textbox {
+  width: 90%;
+  background-color: #D9E1BE;
+  font-family: poppins;
+  font-size:17px;
+  line-height: 150%;
+  color: #5B815C;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 6px 6px 0px 0px #ADC6A0;
+  border-radius: 20px;
+}
+
+.videogallery {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin:auto;
+}
+
+
+.gallerycontainer {
+  width: 100%;
+  background-color: #F3C888;
+  padding-bottom: 100px;
+  box-shadow: 0px 10px 14px 5px rgba(164, 103, 33, 0.3) inset;
+}
+
+.galleryheading {
+  font-family: poppins;
+  font-size: 30px;
+  color: #D08225;
+  padding-top: 70px;
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+.galleryblurb {
+  font-family: poppins;
+  font-size: 18px;
+  color: #A46721;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resources {
+  font-family: poppins;
+  width: 320px;
+  color: #A46721;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 25px;
+    width: 320px; 
+    height: 180px;
+    box-shadow: 0px 0px 0px 10px #F7D9A5;
+    object-fit: contain;
+
+}
+
+.infocontainer2 {
+  width: 60%;
+  box-shadow: 10px 10px 14px 5px rgba(91, 129, 92, 0.3) inset;
+  border-radius: 200px;
+  height: 320px;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #ADC6A0;
+}
+
+.printeddate {
+  font-family: poppins;
+  font-size: 25px;
+  color: #5B815C;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.infotext2 {
+  font-family: poppins;
+  font-size: 16px;
+  color: #5E8967;
+  margin-top: 30px;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
